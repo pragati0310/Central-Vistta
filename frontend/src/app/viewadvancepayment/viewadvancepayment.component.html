@@ -1,0 +1,23 @@
+
+<div class="container">
+    <h1 class="text-center">Advance Payment</h1>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Payment Id</th>
+                <th>Payment Amount</th>
+                <th>Payment Date</th>
+                <th>Payment Mode</th>
+                <th> Email Id</th>
+                </tr>
+                </thead>
+            <tbody>
+<tr *ngFor="let a of arr">
+    
+    <td>{{a.paymentid}}</td>
+    <td>{{a.paymentamount}}</td>
+    <td>{{a.paymentdate}}</td>
+    <td>{{a.paymentmode}}</td>
+    <td>{{a.emailid}}</td>
+            </tbody>
+            </table></div>

@@ -1,0 +1,23 @@
+<div class="container">
+    <h1 class="text-center">Booking</h1>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Flat ID</th>
+                <th>Booking Amount</th>
+                <th>Lease Duration</th>
+                <th>Terms Accepted</th>
+                <th> Email Id</th>
+                </tr>
+                </thead>
+            <tbody>
+<tr *ngFor="let b of barr">
+    <td>{{b.flatid}}</td>
+    <td>{{b.flattype}}</td>
+    <td>{{b.bookingamount}}</td>
+    <td>{{b.leaseduration}}</td>
+    <td>{{b.termsaccepted}}</td>
+    <td>{{b.emailid}}</td>
+            </tbody>
+            </table></div>

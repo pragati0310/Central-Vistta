@@ -1,0 +1,30 @@
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-3" style="margin-top: 23px;">
+            <div class="list-group">
+                <h1 class="text-center">Available Flats</h1>
+                <a class="list-group-item">1BHK</a>
+                <a class="list-group-item">2BHK</a>
+                <a class="list-group-item">3BHK</a>
+
+            </div>
+        </div>
+        
+        <div class="col-sm-9">
+            <h1 class="text-center">Admin Login</h1>
+            <form (ngSubmit)="submitdata()">
+           
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" name="email" [(ngModel)]="adm.email">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" class="form-control" id="password" name="password" [(ngModel)]="adm.password">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-4" *ngFor="let c of flat">
+            <div class="thumbnail">
+                <img src="http://localhost:9009/project/downloadFile/{{c.flatmngImages[0].name}}">
+                <div class="caption">
+                    <h4> Flatid: {{c. flatid}}</h4>
+                    <h4>Budget: {{c.budget}}</h4><br>
+                        <h4>FurnishedStatus: {{c.furnishedStatus}} </h4>
+                        <h4> Amenities: {{c. amenities}} </h4>
+                        <h4>Floorpreference: {{ c.floorpreference}} </h4>
+                        <h4>Petfriendly: {{c.petfriendly}} </h4>
+                        <h4>Otherrequirement: {{c.otherrequirement}} </h4>
+                    
+                    <div [hidden]="!login">
+                        <input type="button" value="Booking" class="btn btn-primary" (click)="booking(c.id)">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+</div>

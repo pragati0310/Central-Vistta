@@ -1,0 +1,58 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-3" style="margin-top: 23px;">
+            <div class="list-group">
+                <h1 class="text-center">Available Flats</h1>
+                <a class="list-group-item">1BHK</a>
+                <a class="list-group-item">2BHK</a>
+                <a class="list-group-item">3BHK</a>
+
+            </div>
+        </div>
+        
+        <div class="col-sm-9">
+            <h1 class="text-center">Registrer Here</h1>
+            <form (ngSubmit)="submitdata()">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-control" id="name" name="name" [(ngModel)]="reg.name">
+                </div>
+                <div class="form-group">
+                    <label for="address">Address:</label>
+                    <input type="text" class="form-control" id="address" name="address" [(ngModel)]="reg.address">
+                </div>
+                <div class="form-group">
+                    <label for="city">City:</label>
+                    <select class="form-control" id="city" name="city" [(ngModel)]="reg.city">
+                        <option value="">--select--</option>
+                        <option>Satara</option>
+                        <option>Pune</option>
+                        <option>Mumbai</option>
+                        <option>Sangali</option>
+                        <option>Kolhapur</option>
+                        <option>Solapur</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="gender">Gender:</label>
+                    <label class="radio-inline"><input type="radio" name="gender" value="Male" [(ngModel)]="reg.gender">Male</label>
+                    <label class="radio-inline"><input type="radio" name="gender" value="Female" [(ngModel)]="reg.gender">Female</label>
+                    <label class="radio-inline"><input type="radio" name="gender" value="Other" [(ngModel)]="reg.gender">Other</label>
+                </div>
+                <div class="form-group">
+                    <label for="contact">Contact:</label>
+                    <input type="tel" class="form-control" id="contact" name="contact" [(ngModel)]="reg.contact">
+                </div>
+                <div class="form-group">
+                    <label for="emailid">EmailId:</label>
+                    <input type="emailid" class="form-control" id="emailid" name="emailid" [(ngModel)]="reg.emailid">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" class="form-control" id="password" name="password" [(ngModel)]="reg.password">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>

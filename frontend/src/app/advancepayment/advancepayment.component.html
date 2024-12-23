@@ -1,0 +1,44 @@
+<div class="container">
+    <div class="row">
+<div class="col-sm-12">
+    <h1 class="text-center">Advance Payment Here</h1>
+    <form (ngSubmit)="submitdata()">
+        <div class="form-group">
+            <label for="paymentid">Payment Id:</label>
+            <input type="text" class="form-control" id="paymentid" name="paymentid" [(ngModel)]="ap.paymentid">
+        </div>
+        <div class="form-group">
+            <label for="paymentamount">Payment Amount:</label>
+            <input type="number" class="form-control" id="paymentamount" name="paymentamount"
+                [(ngModel)]="ap.paymentamount">
+        </div>
+
+
+        <div class="form-group">
+            <label for="paymentdate">Payment Date:</label>
+            <input type="date" class="form-control" id="paymentdate" name="paymentdate"
+                [(ngModel)]="ap.paymentdate">
+        </div>
+        
+
+        <div class="form-group">
+            <label for="termsaccepted">Payment Mode:</label>
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="checkbox1" name="checkbox" value="checkbox1" checked>
+            <label class="form-check-label" for="checkbox1"><i class="fas fa-angrycreative "></i>Creditcard</label>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="checkbox2" name="checkbox" value="checkbox2">
+            <label class="form-check-label" for="checkbox2">VPI</label>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="checkbox3" name="checkbox" value="checkbox3">
+            <label class="form-check-label" for="checkbox3">Net Banking</label>
+          </div>
+
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+  </div>
+  </form>
+</div>
+</div></div>

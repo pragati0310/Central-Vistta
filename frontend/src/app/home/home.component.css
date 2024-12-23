@@ -1,0 +1,9 @@
+.content{
+    justify-content: center;
+    margin-top: 49px;
+}
+.content h1{
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(173, 173, 85);
+    margin-top: 50px;
+}
